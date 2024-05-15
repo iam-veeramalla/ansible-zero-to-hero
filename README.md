@@ -59,6 +59,12 @@ Day 9: Ansible Vault for Security
 - Encrypting and decrypting files using Ansible Vault.
 - Best practices for managing secrets and sensitive data in Ansible.
 
-Day 10: Advanced Ansible Project
+Day 10: Ansible Tower Deep Dive
+
+- Understanding Ansible Tower
+- Comparision with Ansible command line and adhoc commands
+- RBAC and Security with Ansible Tower
+
+Day 11: Advanced Ansible Project
 
 - Terraform + Ansible Project
