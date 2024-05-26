@@ -5,10 +5,11 @@ Day 1: Introduction to Ansible and Getting Started
 - Overview of Ansible: What is Ansible, its advantages, and why use it?
 - Comparison with Shell and Python scripting for automation.
 - Installing Ansible on different platforms.
-- Basics of YAML syntax (as it's heavily used in Ansible).
+- IDE(VS Code) and Plugin configuration.
 
 Day 2: Ansible Adhoc Commands
 
+- Ansible Inventory 
 - Understanding Adhoc commands and their usage.
 - Examples of common Adhoc commands for system management tasks.
 - Exploring the power of Adhoc commands for quick tasks.
@@ -59,12 +60,18 @@ Day 9: Ansible Vault for Security
 - Encrypting and decrypting files using Ansible Vault.
 - Best practices for managing secrets and sensitive data in Ansible.
 
-Day 10: Ansible Tower Deep Dive
+Day 10: Policy as Code
+
+Day 11: Network Automation using Ansible
+
+Day 12: Ansible Tower Deep Dive
 
 - Understanding Ansible Tower
 - Comparision with Ansible command line and adhoc commands
 - RBAC and Security with Ansible Tower
 
-Day 11: Advanced Ansible Project
+Day 13: Advanced Ansible Project
 
 - Terraform + Ansible Project
+
+Day 14: Ansible Interview Questions
