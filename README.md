@@ -9,6 +9,7 @@ Day 1: Introduction to Ansible and Getting Started
 
 Day 2: Ansible Adhoc Commands
 
+- Passwordless Authentication
 - Ansible Inventory 
 - Understanding Adhoc commands and their usage.
 - Examples of common Adhoc commands for system management tasks.
