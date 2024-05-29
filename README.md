@@ -17,10 +17,9 @@ Day 2: Ansible Adhoc Commands
 
 Day 3: Writing Your First Ansible Playbook
 
-- Setting up Ansible configuration (including passwordless SSH setup).
-- Writing a simple playbook to automate a basic task.
-- Introduction to Ansible structure: Inventory, Playbook, and Tasks.
-- Hands-on: Writing a playbook to install Nginx on target servers.
+- Understanding YAML basics and Ansible playbook structure.
+- Introduction to Ansible structure: Playbook, Play, Modules, Tasks and Collections.
+- Hands-on: Writing a playbook to install apache2 and deploy a static app on aws.
 
 Day 4: Understanding Ansible Roles
 
