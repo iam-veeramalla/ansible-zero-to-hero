@@ -50,7 +50,8 @@ family:
 
 
 
-
+###playbook
+```
 ---
 - name: Create directory and file
   hosts: all
@@ -72,3 +73,4 @@ family:
         owner: root
         group: root
 ansible-playbook -i inventory.ini second-playbook.yaml
+```
