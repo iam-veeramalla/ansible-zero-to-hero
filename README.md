@@ -17,10 +17,9 @@ Day 2: Ansible Adhoc Commands
 
 Day 3: Writing Your First Ansible Playbook
 
-- Setting up Ansible configuration (including passwordless SSH setup).
-- Writing a simple playbook to automate a basic task.
-- Introduction to Ansible structure: Inventory, Playbook, and Tasks.
-- Hands-on: Writing a playbook to install Nginx on target servers.
+- Understanding YAML basics and Ansible playbook structure.
+- Introduction to Ansible structure: Playbook, Play, Modules, Tasks and Collections.
+- Hands-on: Writing a playbook to install apache2 and deploy a static app on aws.
 
 Day 4: Understanding Ansible Roles
 
@@ -29,11 +28,11 @@ Day 4: Understanding Ansible Roles
 - Comparing roles with playbooks and understanding their advantages.
 - Hands-on: Creating a simple role and using it in a playbook.
 
-Day 5: Deep Dive into Ansible Roles
+Day 5: Deep Dive into Ansible Roles with Demo
 
-- Advanced usage of Ansible roles with a practical example project.
-- Ansible Galaxy - Exploring pre-built Ansible roles
-- Incorporating all the concepts learned so far into a complex project.
+- Ansible Galaxy - Exploring pre-built Ansible roles.
+- Ansible Galaxy - Importing and Installing roles.
+- DEMO: Advanced usage of Ansible roles with a practical example project.
 - Best practices for organizing roles and playbook structure.
 
 Day 6: Ansible Variables and Precedence
