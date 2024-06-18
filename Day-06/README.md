@@ -1,8 +1,0 @@
-- Why should you use variables in ansible ?
-- How to declare variables ? (Standards and good practices)
-- How to use vars using the Jinja 2 styling ?
-- Difference between {{ }} and "{{ }}"
-- Read variables of different data types
-- Common usage of variables (in playbook, role vars, group vars, overrides using extra vars)
-- Variable precedence
-- Register var
