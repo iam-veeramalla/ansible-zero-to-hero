@@ -37,7 +37,8 @@ Day 5: Deep Dive into Ansible Roles with Demo
 
 Day 6: Ansible Variables and Precedence
 
-- Understanding Ansible variables and their scope.
+- Create AWS Resources using Ansible (Collections)
+- Understanding Ansible variables and their scope with an example
 - Jinja2 Templating - Utilizing advanced templating features
 - Variable precedence: How Ansible resolves conflicts between different variable sources.
 - Hands-on: Using variables in playbooks and roles.
