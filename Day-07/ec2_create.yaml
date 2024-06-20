@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+  - name: Create EC2 instances
+    amazon.aws.ec2_instance:
+      name: "{{ item.name }}"
+      key_name: "abhi-aws-keypair"
+      instance_type: t2.micro
+      security_group: default
+      region: ap-south-1
+      aws_access_key: "{{ec2_access_key}}"  # From vault as defined
+      aws_secret_key: "{{ec2_secret_key}}"  # From vault as defined      
+      network:
+        assign_public_ip: true
+      image_id: "{{ item.image }}"
+      tags:
+        environment: "{{ item.name }}"
+    loop:
+      - { image: "ami-0e1d06225679bc1c5", name: "manage-node-1" } # Update AMI ID according 
+      - { image: "ami-0f58b397bc5c1f2e8", name: "manage-node-2" } # to your account
+      - { image: "ami-0f58b397bc5c1f2e8", name: "manage-node-3" }
