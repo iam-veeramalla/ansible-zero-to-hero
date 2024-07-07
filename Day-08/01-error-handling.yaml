@@ -1,8 +1,12 @@
 ---
 - hosts: all
   become: true
-
+  
   tasks:
+    - name: Update apt cache    # if you face this error while executing " No package matching 'docker.io' is available " Be Ensure your Ansible playbook includes a task to update the apt cache before attempting to install any packages.
+       ansible.builtin.apt:
+         update_cache: yes  
+       
     - name: Install security updates
       ansible.builtin.apt:
         name: "{{ item }}"
