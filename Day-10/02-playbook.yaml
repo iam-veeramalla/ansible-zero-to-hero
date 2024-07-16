@@ -1,18 +1,18 @@
 ---
-- name: Enforce S3 Bucket Versioning Policy
+- name: Enforce s3 bucket versioning on AWS account
   hosts: localhost
   gather_facts: false
+
   tasks:
-    - name: List all S3 buckets
-      aws_s3_bucket_info:
-        region: us-east-1
-      register: s3_buckets
+    - name: List S3 buckets in AWS account
+      amazon.aws.s3_bucket_info:
+      register: result
     
     - debug:
-       var: s3_buckets.buckets
-
-    - name: Ensure versioning is enabled on all S3 buckets
-      aws_s3_bucket:
+        var: result
+    
+    - name: Enable versioning on S3 bucket
+      amazon.aws.s3_bucket:
         name: "{{ item.name }}"
         versioning: yes
-      loop: "{{ s3_buckets.buckets }}"
+      loop: "{{ result.buckets }}" 
