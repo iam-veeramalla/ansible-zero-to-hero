@@ -47,3 +47,30 @@ family:
     - name: Jenny
       age: 20
 ```
+
+
+
+### playbook to create the directory and the files in the host system.
+```
+---
+- name: Create directory and file
+  hosts: all
+  become: true
+  tasks:
+    - name: Create directory named foo
+      file:
+        path: /path/to/foo
+        state: directory
+        mode: '0755'
+        owner: root
+        group: root
+
+    - name: Create file named akhil inside foo directory
+      file:
+        path: /path/to/foo/akhil
+        state: touch
+        mode: '0644'
+        owner: root
+        group: root
+ansible-playbook -i inventory.ini second-playbook.yaml
+```
