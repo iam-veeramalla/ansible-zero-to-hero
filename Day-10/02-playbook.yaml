@@ -16,3 +16,9 @@
         name: "{{ item.name }}"
         versioning: yes
       loop: "{{ result.buckets }}" 
+
+    - name: Delete all S3 buckets
+      amazon.aws.s3_bucket:
+        name: "{{ item.name }}"
+        state: absent
+      loop: "{{ result.buckets }}"
