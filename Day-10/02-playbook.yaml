@@ -15,4 +15,4 @@
       amazon.aws.s3_bucket:
         name: "{{ item.name }}"
         versioning: yes
-      loop: "{{ result.buckets }}" 
+      loop: "{{ result.buckets }}" #By Rk
