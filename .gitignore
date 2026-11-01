@@ -19,3 +19,7 @@
 
 # Go workspace file
 go.work
+
+# Ansible vault secrets — never commit these
+*.pass
+vault.pass
